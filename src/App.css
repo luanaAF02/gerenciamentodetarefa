@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f3e5f5; /* Fundo suave lilás */
+  color: #333; /* Cor do texto */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh; /* Altura total da viewport */
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  text-align: center;
+  color: #6a1b9a; /* Roxo vibrante */
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  display: flex;
+  flex-direction: column; /* Alinha os elementos em coluna */
+  justify-content: center; /* Centraliza o contêiner */
+  padding: 20px;
+  background-color: #e1bee7; /* Cor de fundo do contêiner */
+  border-radius: 10px; /* Cantos arredondados do contêiner */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  max-width: 400px; /* Largura máxima do contêiner */
+  width: 100%; /* Largura total do contêiner */
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column; /* Alinhar os campos em coluna */
+  align-items: center; /* Centralizar os campos */
+  width: 100%; /* Largura total do formulário */
+}
+
+.task-form input,
+.task-form textarea {
+  width: 80%; /* Largura dos campos */
+  margin-bottom: 10px; /* Espaçamento entre os campos */
+  padding: 10px; /* Espaçamento interno */
+  border: 1px solid #6a1b9a; /* Borda roxa */
+  border-radius: 5px; /* Cantos arredondados */
+}
+
+.task-form textarea {
+  resize: none; /* Impedir redimensionamento */
+  height: 100px; /* Altura fixa */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Centraliza os botões */
+  width: 100%; /* Largura total do contêiner dos botões */
+  margin-top: 10px; /* Espaçamento acima do botão */
+}
+
+button,
+.button-link {
+  background-color: #6a1b9a; /* Botão roxo */
+  color: white; /* Texto do botão branco */
+  border: none; /* Sem borda */
+  border-radius: 5px; /* Cantos arredondados */
+  padding: 10px 15px; /* Espaçamento do botão */
+  cursor: pointer; /* Mão ao passar o mouse */
+  transition: background-color 0.3s; /* Transição suave */
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+  display: inline-block; /* Para que o padding e o background funcionem corretamente */
+}
+
+button:hover,
+.button-link:hover {
+  background-color: #4a148c; /* Cor do botão ao passar o mouse */
+}
+
+.button-link {
+  margin: 0 25px; /* Espaçamento entre os botões */
+}
+
+.task-item {
+  margin-bottom: 20px; /* Espaçamento entre as tarefas */
 }
